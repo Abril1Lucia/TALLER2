@@ -6,7 +6,7 @@ import { provideHttpClientTesting, HttpTestingController} from '@angular/common/
 describe('pruebas de servicio de usuarios', () => {
   let service: UsersService;
   let Mockhttp : HttpTestingController;
-  const urltest = "http://localhost:9000/iniciarSesion"
+  const urltest = "http://localhost:9000/usuarios"
 
 
   beforeEach(() => {
@@ -16,7 +16,7 @@ describe('pruebas de servicio de usuarios', () => {
       provideHttpClientTesting()
     ] });
 
-    
+
     service = TestBed.inject(UsersService);
    Mockhttp = TestBed.inject(HttpTestingController)
   });
